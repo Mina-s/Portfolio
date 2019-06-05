@@ -26,11 +26,11 @@ if(isset($_POST) && !empty($_POST)){
     $mail->Port = '587';        
     $mail->SMTPAuth = true;      
     $mail->Username = 'Amina-epitech';     
-    $mail->Password = 'Aminouche26';    
+    $mail->Password = 'Amina';    
     $mail->SMTPSecure = '';       
     $mail->From = $_POST["email"];     
     $mail->FromName = $_POST["name"];    
-    $mail->AddAddress('amina.skendraoui@epitech.eu', 'Name');
+    $mail->AddAddress('adress.mail@gmail.com, 'Name');
     $mail->AddCC($_POST["email"], $_POST["name"]); 
     $mail->WordWrap = 50;       
     $mail->IsHTML(true);         
